@@ -56,10 +56,11 @@ const page = () => {
 
                 {
                     notes.length === 0 ? <p className='text-center font-semibold text-lg'>No notes</p> : (
-                        <div className='flex flex-col gap-5 lg:px-10 px-4 bg-gray-50 rounded-md py-4'>
+                        <div className='flex flex-col gap-5 lg:px-10 px-4  rounded-md'>
                             {
-                                notes.map(note,i =>(
-                                    <div key={ i} className=' bg-gray-50 p-5 rounded-md hover:bg-gray-100 hover:cursor-pointer'>
+                                notes.map((note, i) => (
+
+                                    <div key={i} className=' bg-gray-50 p-5 rounded-md hover:bg-gray-100 hover:cursor-pointer'>
                                         <h2 className='font-bold text-lg uppercase text-center lg:mb-5 mb-4'>{note.title}</h2>
                                         {console.log(note.title)}
                                         <div className=' w-full relative'>
@@ -83,6 +84,7 @@ const page = () => {
                         </div>
                     )
                 }
+
             </div>
         </main>
     )

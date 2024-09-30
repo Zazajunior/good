@@ -31,7 +31,7 @@ const Navbar = () => {
         },
         {
             label: "about",
-            href: "/about",
+            href: "/about-us",
             id: 3
         }
 
